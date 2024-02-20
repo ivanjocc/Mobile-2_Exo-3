@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/temperatureTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: 0°C"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/colorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/temperatureTextView"
+        android:text="Color"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="#0000FF"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/changeTempButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorTextView"
+        android:text="Change temperature"
+        android:textSize="20sp" />
+
+</RelativeLayout>
